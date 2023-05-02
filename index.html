@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <form>
+          <div>
+            <label for="name">Name:</label>
+            <input 
+              id="name" 
+              type="text" 
+              name="name" 
+              placeholder="Full Name"/>
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input
+              id="email"
+              type="text"
+              name="email"
+              required
+            />
+          </div>
+        <div>
+          <h2>Preferred Gift Card:</h2>
+          <div>
+            <input id="amazon" name="gift" type="radio" value="amazon" />
+            <label for="amazon">Amazon</label>
+          </div>
+          <div>
+            <input id="visa" name="gift" type="radio" value="visa" />
+            <label for="visa">Visa</label>
+          </div>
+          <div>
+            <input id="walmart" name="gift" type="radio" value="walmart" />
+            <label for="walmart">Walmart</label>
+          </div>
+        </div>
+        <div>
+          <label for="form-message">Your Message:</label>
+          <textarea
+            id="form-message"
+            name="message"
+            autofocus="on"
+            required
+            maxlength="200"
+            placeholder="Your message here"
+          ></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
